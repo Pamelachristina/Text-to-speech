@@ -1,0 +1,59 @@
+.app-header {
+    width: 100%;
+    background: linear-gradient(135deg, #5c67f2, #ff6347);
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed; /* Ensure it stays at the top */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure it stays above other content */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header-graphics {
+    margin-top: 10px;
+    /* Add styles for any graphics or SVGs */
+  }
+  
+  @media (max-width: 600px) {
+    .app-header {
+      padding: 10px 0;
+    }
+  
+    .logo-container {
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,56 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: calc(100% - 20px); /* Adjust the width to account for the padding */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.login-form .error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.login-form .button-container {
+  display: flex;
+  justify-content: space-between; /* Space out buttons equally */
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.login-form button {
+  flex: 1; /* Make buttons take equal space */
+  padding: 10px;
+  margin: 0 5px; /* Add some margin between buttons */
+  border: none;
+  border-radius: 4px;
+  background-color: #5c67f2;
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #4a54e1;
+}
+

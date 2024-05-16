@@ -1,0 +1,214 @@
+/* Base Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f4f4f9 40%, #e0f7fa, #ffccbc, #d1c4e9, #c5cae9);
+  background-size: 400% 400%;
+  color: #333;
+  height: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Flexbox Container for Centering */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+/* Content Container */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Conversion History Container */
+.history-container {
+  width: 100%;
+  max-width: 600px;
+  height: 300px; /* Adjustable based on preference */
+  overflow-y: auto; /* Enables vertical scrolling */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 10px;
+  background: white; /* Light background for the content area */
+}
+
+/* Responsive Table Styling */
+table {
+  width: 100%;
+  margin: 0; /* Remove default margin */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  padding-left: 20px; /* Increase left padding for better alignment */
+  border-bottom: 1px solid #ccc;
+  text-align: left; 
+}
+
+th {
+  background-color: #5c67f2;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f4f4f9;
+}
+
+/* Styling for the textarea */
+#textArea {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none; /* Ensure no outline on focus */
+  box-shadow: 0 0 10px rgba(81, 203, 238, 1); /* Optional: Add custom focus effect */
+}
+
+/* Highlighted Text Styling */
+.highlighted-text {
+  width: 100%;
+  max-width: 600px;
+  min-height: 200px;
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: white;
+  white-space: pre-wrap; /* Preserve whitespace and line breaks */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Aligns buttons at the center of the container */
+  gap: 10px; /* Adds space between the buttons */
+  padding: 15px;
+}
+
+/* Button Styling */
+button {
+  cursor: pointer;
+  background-color: #5c67f2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a54e1;
+}
+
+.clear-button {
+  background-color: #ff6347; /* tomato */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.clear-button:hover {
+  background-color: #e5533d; /* darker tomato */
+}
+
+/* Audio Controls Styling */
+audio {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1, h2 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+/* Additional Responsive Styling for smaller devices */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  th, td {
+    padding-left: 10px; /* Less padding on smaller screens */
+    padding-right: 10px;
+    font-size: 14px; /* Smaller font size might look better on small screens */
+  }
+
+  button, #textArea, audio {
+    width: 100%;
+  }
+}
+
+/* Dashboard Styling */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  margin: 0;
+}
+
+.logout-button {
+  cursor: pointer;
+  background-color: #ff6347; /* tomato */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #e5533d; /* darker tomato */
+}
+
+
