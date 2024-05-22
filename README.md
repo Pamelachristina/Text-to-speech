@@ -128,6 +128,7 @@ Use the "Stop" button to stop the speech and reset the text highlighting.
 
 ## Program Listing: Server.js
 
+```javascript
 const express = require("express");
 const { Pool } = require("pg");
 const { Resemble } = require("@resemble/node");
